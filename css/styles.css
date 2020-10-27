@@ -473,6 +473,27 @@ a.active {
     font-size: 16px;
 }
 
+.page-scroll {
+    -webkit-transition: all .2s ease-in-out !important; 
+    -moz-transition: all .2s ease-in-out !important;
+    transition: all .2s ease-in-out !important;
+}
+
+.page-scroll:hover {
+    opacity: 0.8 !important;
+}
+
+#hire-me {
+    color: cyan;
+    -webkit-transition: all .2s ease-in-out; 
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#hire-me:hover {
+    opacity: 0.8;
+}
+
 .navbar-shadow {
     -webkit-box-shadow: 0px 1px 1px #444;
     -moz-box-shadow: 0px 1px 1px #444;
@@ -1209,9 +1230,9 @@ img#mullen-logo,
 img#nu-logo {
     height: auto;
     display: block;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
 }
 
 img#starry-logo {
@@ -1790,7 +1811,7 @@ ul.social-buttons li a:active {
 #github,
 #pinterest,
 #spotify {
-    /*border: 1px solid #fff !important;*/
+    /* border: 1px solid #fff !important; */
 }
 
 #facebook:hover {
@@ -1815,7 +1836,7 @@ ul.social-buttons li a:active {
 }
 
 #github:hover {
-    background-color: #4183C4;
+    background-color: black;
 }
 
 #pinterest:hover {
@@ -1824,6 +1845,15 @@ ul.social-buttons li a:active {
 
 #spotify:hover {
     background-color: #2ebd59;
+}
+
+#email:hover {
+    background-color: white;
+    color: black;
+}
+
+#phone:hover {
+    background-color: green;
 }
 
 #to-top {
