@@ -1856,6 +1856,10 @@ ul.social-buttons li a:active {
     background-color: green;
 }
 
+#angellist:hover {
+    background-color: #4a043e;
+}
+
 #to-top {
     transition: all 0.5s;
 }
