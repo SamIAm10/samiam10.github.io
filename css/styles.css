@@ -1911,8 +1911,30 @@ ul.social-buttons li a:active {
     background-color: #F0F0F0;
 }
 
+.tech_used {
+    display: inline-block;
+    margin: 3px 3px 3px 0;
+    font-family: Inconsolata, monospace;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    background: 0 0;
+}
+
+.tech_used:first-of-type {
+    margin-left: 0;
+}
+
 .modal-header .close {
     margin-top: -13px;
+    transition: all .2s ease-in-out;
+}
+
+.modal-footer .btn-default {
+    transition: all .2s ease-in-out;
 }
 
 .close {
