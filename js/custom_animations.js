@@ -1,5 +1,6 @@
+// paper airplane
 function bounceUp() {
-    document.getElementsByClassName("email-icon")[0].style.transform = "translate(40%, -40%) scale(0.7)";
+    document.getElementsByClassName("email-icon")[0].style.transform = "translate(45%, -45%) scale(0.65)";
 }
 
 function bounceDown() {

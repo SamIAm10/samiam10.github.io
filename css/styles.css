@@ -809,15 +809,14 @@ a.fa.fa-angle-down:focus {
     vertical-align: middle;
     position: relative;
     margin: 0 auto 40px;
-}
+    -webkit-transition: all ease .7s;
+    -moz-transition: all ease .7s;
+    transition: all ease .7s;}
 
 .icon:hover {
     -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    -webkit-transition: all ease .7s;
-    -moz-transition: all ease .7s;
-    transition: all ease .7s;
 }
 
 @media screen and (max-width: 480px) {
@@ -1701,6 +1700,7 @@ a.resume-btn:active {
     vertical-align: middle;
     position: relative;
     margin: 0 auto 10px;
+    transition: all .35s ease-in-out;
 }
 
 #contact p {
