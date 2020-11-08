@@ -47,6 +47,12 @@ $(function() {
 		offset: '75%'
 	});
 
+	/* paper airplane button animation */
+	$('.email-button').hover(function() {
+		$('.email-icon').css('transform', 'translate(45%, -45%) scale(0.65)');
+	}, function() {
+		$('.email-icon').css('transform', 'translate(0, 0) scale(1)');
+	});
 
 	// for preloader
 	// setTimeout(function(){

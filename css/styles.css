@@ -1710,7 +1710,7 @@ a.resume-btn:active {
     margin: 0 auto;
 }
 
-#contact #email-button {
+#contact .email-button {
     color: #000;
     padding: 10px 20px;
     text-decoration: none;
@@ -1722,7 +1722,7 @@ a.resume-btn:active {
     transition: 0.3s ease-in-out;
 }
 
-#contact #email-button:hover {
+#contact .email-button:hover {
     color: #fff;
     background: #00009C;
     border: 2px solid #00009C;
