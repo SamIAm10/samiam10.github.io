@@ -90,15 +90,5 @@ $(function() {
     $("#to-top").mouseout(function() {
         $("#to-top-copy").animate({opacity: "0"}, "slow");
 	});
-	
-	$('.modal').on('hide.bs.modal', function (e) {
-		if(location.hash=='#modal')
-			window.history.back();
-	});
-	
-	$(window).on('popstate', function (event) {  //pressed back button
-		if(event.state!==null)
-			$('.modal').modal('hide');
-	});
 
 });
