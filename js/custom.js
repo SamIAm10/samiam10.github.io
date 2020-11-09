@@ -89,33 +89,16 @@ $(function() {
     });
     $("#to-top").mouseout(function() {
         $("#to-top-copy").animate({opacity: "0"}, "slow");
-    });
+	});
+	
+	$('.modal').on('hide.bs.modal', function (e) {
+		if(location.hash=='#modal')
+			window.history.back();
+	});
+	
+	$(window).on('popstate', function (event) {  //pressed back button
+		if(event.state!==null)
+			$('.modal').modal('hide');
+	});
 
-});
-
-$(document).ready(function(){
-	$('div.modal').on('show.bs.modal', function() {
-		var modal = this;
-		var hash = modal.id;
-		window.location.hash = hash;
-		window.onhashchange = function() {
-		if (!location.hash){
-			$(modal).modal('hide');
-		}
-		}
-	});
-	$('div.modal').on('hidden.bs.modal', function() {
-		var hash = this.id;
-		history.replaceState('', document.title, window.location.href);
-	});
-	// when close button clicked simulate back
-	$('div.modal button.close').on('click', function(){
-		window.history.back();
-	})
-	// when esc pressed when modal open simulate back
-	$('div.modal').keyup(function(e) {
-		if (e.keyCode == 27){
-		window.history.back();          
-		}
-	});
 });
