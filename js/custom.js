@@ -106,7 +106,7 @@ $(document).ready(function(){
 	});
 	$('div.modal').on('hidden.bs.modal', function() {
 		var hash = this.id;
-		history.replaceState('', document.title, window.location.pathname);
+		history.replaceState('', document.title, window.location.href);
 	});
 	// when close button clicked simulate back
 	$('div.modal button.close').on('click', function(){
