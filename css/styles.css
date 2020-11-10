@@ -2202,14 +2202,14 @@ input:checked + .slider:before {
 /* toggle switch icons */
 #sun-icon {
     display: inline-block;
-    -webkit-transform: translate(-80%, 35%) scale(1.8);
-    -ms-transform: translate(-80%, 35%) scale(1.8);
-    transform: translate(-80%, 35%) scale(1.8);
+    -webkit-transform: translate(-80%, 40%) scale(1.8);
+    -ms-transform: translate(-80%, 40%) scale(1.8);
+    transform: translate(-80%, 40%) scale(1.8);
 }
 
 #moon-icon {
     display: inline-block;
-    -webkit-transform: translate(80%, 35%) scale(1.8);
-    -ms-transform: translate(80%, 35%) scale(1.8);
-    transform: translate(80%, 35%) scale(1.8);
+    -webkit-transform: translate(80%, 40%) scale(1.8);
+    -ms-transform: translate(80%, 40%) scale(1.8);
+    transform: translate(80%, 40%) scale(1.8);
 }
