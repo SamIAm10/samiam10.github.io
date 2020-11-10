@@ -78,6 +78,13 @@ $(function() {
         event.preventDefault();
     });
 
+	$('#experience a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -90,5 +97,53 @@ $(function() {
     $("#to-top").mouseout(function() {
         $("#to-top-copy").animate({opacity: "0"}, "slow");
 	});
+
+	// Dark mode
+	var dark_mode = false;
+
+	$("#dark-toggle").click(function() {
+		dark_mode ? dark_mode = false : dark_mode = true;
+		$("#about").toggleClass("dark-about");
+		$("#about a").toggleClass("dark-about-a");
+		$("#tl-dr").toggleClass("dark-tl-dr");
+		$("#tl-dr h3").toggleClass("dark-tl-dr-h3");
+		$("#services").toggleClass("dark-services");
+		$("#experience").toggleClass("dark-experience");
+		$("#experience a").toggleClass("dark-experience-a");
+		$("#experience .places-worked").toggleClass("dark-experience-places-worked");
+		$("#portfolio").toggleClass("dark-portfolio");				
+		$(".modal-header").toggleClass("dark-modal-header");				
+		$(".modal-header h6").toggleClass("dark-modal-header-h6");				
+		$(".modal-header .close").toggleClass("dark-modal-header-close");				
+		$(".modal-body").toggleClass("dark-modal-body");			
+		$(".modal-body a").toggleClass("dark-modal-body-a");			
+		$(".modal-body .tech_used").toggleClass("dark-modal-body-tech_used");			
+		$(".modal-body #visit-btn").toggleClass("dark-modal-body-visit-btn");
+		$(".modal-footer").toggleClass("dark-modal-footer");				
+		$(".modal-footer .btn").toggleClass("dark-modal-footer-btn");
+		$("#contact").toggleClass("dark-contact");
+		$("#contact .email-button").toggleClass("dark-contact-email-button");
+	});
+
+	$(".modal-body #visit-btn").hover(function() {
+		if (dark_mode) {
+			$(this).css("background-color", "rgb(0, 181, 181)");
+		}
+	}, function() {
+		if (dark_mode) {
+			$(this).css("background-color", "");
+		}
+	});
+
+	$("#contact .email-button").hover(function() {
+		if (dark_mode) {
+			$(this).css("background-color", "rgb(0, 181, 181)");
+		}
+	}, function() {
+		if (dark_mode) {
+			$(this).css("background-color", "");
+		}
+	});
+	// End dark mode
 
 });

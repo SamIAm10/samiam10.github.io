@@ -614,7 +614,7 @@ a.fa.fa-angle-down:focus {
 /* ======= ABOUT ======= */
 
 #about {
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 100px;
 }
 
@@ -1170,8 +1170,8 @@ a.fa.fa-angle-down:focus {
     margin: 0 auto;
     width: 75px;
     height: auto;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
@@ -1231,7 +1231,7 @@ img#nu-logo {
     display: block;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
 }
 
 img#starry-logo {
@@ -1909,6 +1909,8 @@ ul.social-buttons li a:active {
 .modal-header,
 .modal-footer {
     background-color: #F0F0F0;
+    border-top: 0 none;
+    border-bottom: 0 none;
 }
 
 .tech_used {
@@ -1997,7 +1999,7 @@ ul.social-buttons li a:active {
 }
 
 .modal-body #visit-btn:hover {
-    color: #fff;
+    color: #fff !important;
     background-color: #00009C;
 }
 
@@ -2037,4 +2039,177 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+
+/* ============== DARK MODE ============== */
+
+.dark-about {
+    background: rgb(29, 28, 28) !important;
+    color: white !important;
+}
+
+.dark-about-a {
+    color: cyan !important;
+}
+
+.dark-tl-dr {
+    background-color: rgb(54, 53, 53) !important;
+    color: rgb(199, 199, 199) !important;
+}
+
+.dark-tl-dr-h3 {
+    color: white !important;
+}
+
+.dark-services {
+    background-color: rgb(54, 53, 53) !important;
+    color: white !important;
+}
+
+.dark-experience {
+    background-color: rgb(29, 28, 28) !important;
+    color: white !important;
+}
+
+.dark-experience-a {
+    color: cyan !important;
+}
+
+.dark-experience-places-worked {
+    padding-bottom: 2%;
+    background-color: gray !important;
+}
+
+.dark-portfolio {
+    background: rgb(29, 28, 28) !important;
+    color: white !important;
+}
+
+.dark-modal-header {
+    background: rgb(47, 47, 47) !important;
+    color: white !important;
+}
+
+.dark-modal-header-h6 {
+    color: rgb(193, 193, 193) !important;
+}
+
+.dark-modal-header-close {
+    color: rgb(213, 213, 213) !important;
+}
+
+.dark-modal-body {
+    background: rgb(62, 62, 62) !important;
+    color: white !important;
+}
+
+.dark-modal-body-a {
+    color: cyan !important;
+}
+
+.dark-modal-body-tech_used {
+    color: orange !important;
+    border: 1px solid orange !important;
+}
+
+.dark-modal-body-visit-btn {
+    color: cyan !important;
+    border: 2px solid rgb(0, 181, 181) !important;
+}
+
+.dark-modal-footer {
+    background: rgb(47, 47, 47) !important;
+    color: white !important;
+}
+
+.dark-modal-footer-btn {
+    color: white !important;
+    background-color: rgb(86, 86, 86) !important;
+}
+
+.dark-contact {
+    background-color: rgb(54, 53, 53) !important;
+    color: white !important;
+}
+
+.dark-contact-email-button {
+    color: white !important;
+    border: 2px solid white !important;
+}
+
+/* toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* toggle switch icons */
+#sun-icon {
+    display: inline-block;
+    -webkit-transform: translate(-80%, 35%) scale(1.8);
+    -ms-transform: translate(-80%, 35%) scale(1.8);
+    transform: translate(-80%, 35%) scale(1.8);
+}
+
+#moon-icon {
+    display: inline-block;
+    -webkit-transform: translate(80%, 35%) scale(1.8);
+    -ms-transform: translate(80%, 35%) scale(1.8);
+    transform: translate(80%, 35%) scale(1.8);
 }
