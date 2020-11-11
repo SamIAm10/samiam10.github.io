@@ -99,9 +99,31 @@ $(function() {
 	});
 
 	// Dark mode
-	var dark_mode;
+	var dark_mode = $("#dark-toggle").prop("checked");
 
-	function toggleDarkMode() {
+	$("#about").toggleClass("dark-about", dark_mode);
+	$("#about a").toggleClass("dark-about-a", dark_mode);
+	$("#tl-dr").toggleClass("dark-tl-dr", dark_mode);
+	$("#tl-dr h3").toggleClass("dark-tl-dr-h3", dark_mode);
+	$("#services").toggleClass("dark-services", dark_mode);
+	$("#experience").toggleClass("dark-experience", dark_mode);
+	$("#experience a").toggleClass("dark-experience-a", dark_mode);
+	$("#experience .skill-icon").toggleClass("dark-experience-skill-icon", dark_mode);
+	$("#experience .places-worked").toggleClass("dark-experience-places-worked", dark_mode);
+	$("#portfolio").toggleClass("dark-portfolio", dark_mode);				
+	$(".modal-header").toggleClass("dark-modal-header", dark_mode);				
+	$(".modal-header h6").toggleClass("dark-modal-header-h6", dark_mode);				
+	$(".modal-header .close").toggleClass("dark-modal-header-close", dark_mode);				
+	$(".modal-body").toggleClass("dark-modal-body", dark_mode);			
+	$(".modal-body a").toggleClass("dark-modal-body-a", dark_mode);			
+	$(".modal-body .tech_used").toggleClass("dark-modal-body-tech_used", dark_mode);			
+	$(".modal-body #visit-btn").toggleClass("dark-modal-body-visit-btn", dark_mode);
+	$(".modal-footer").toggleClass("dark-modal-footer", dark_mode);				
+	$(".modal-footer .btn").toggleClass("dark-modal-footer-btn", dark_mode);
+	$("#contact").toggleClass("dark-contact", dark_mode);
+	$("#contact .email-button").toggleClass("dark-contact-email-button", dark_mode);
+	
+	$("#dark-toggle").click(function() {
 		dark_mode = $("#dark-toggle").prop("checked");
 		$("#about").toggleClass("dark-about", dark_mode);
 		$("#about a").toggleClass("dark-about-a", dark_mode);
@@ -124,11 +146,7 @@ $(function() {
 		$(".modal-footer .btn").toggleClass("dark-modal-footer-btn", dark_mode);
 		$("#contact").toggleClass("dark-contact", dark_mode);
 		$("#contact .email-button").toggleClass("dark-contact-email-button", dark_mode);
-	}
-
-	toggleDarkMode();
-	
-	$("#dark-toggle").click(toggleDarkMode);
+	});
 
 	$(".modal-body #visit-btn").hover(function() {
 		if (dark_mode) {
