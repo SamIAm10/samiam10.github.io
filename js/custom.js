@@ -100,23 +100,9 @@ $(function() {
 
 	// Dark mode
 	var dark_mode;
-	// if (localStorage.getItem("mode")) {
-	// 	dark_mode = (localStorage.getItem("mode") == "dark");
-	// }
-	// else {
-	// 	localStorage.setItem("mode", "light");
-	// }
 
-	$("#dark-toggle").click(function() {
+	function toggleDarkMode() {
 		dark_mode = $("#dark-toggle").prop("checked");
-		// if (dark_mode) {
-		// 	dark_mode = false;
-		// 	localStorage.setItem("mode", "dark");
-		// }
-		// else {
-		// 	dark_mode = true;
-		// 	localStorage.setItem("mode", "light");
-		// }
 		$("#about").toggleClass("dark-about", dark_mode);
 		$("#about a").toggleClass("dark-about-a", dark_mode);
 		$("#tl-dr").toggleClass("dark-tl-dr", dark_mode);
@@ -138,7 +124,11 @@ $(function() {
 		$(".modal-footer .btn").toggleClass("dark-modal-footer-btn", dark_mode);
 		$("#contact").toggleClass("dark-contact", dark_mode);
 		$("#contact .email-button").toggleClass("dark-contact-email-button", dark_mode);
-	});
+	}
+
+	toggleDarkMode();
+	
+	$("#dark-toggle").click(toggleDarkMode);
 
 	$(".modal-body #visit-btn").hover(function() {
 		if (dark_mode) {
