@@ -47,13 +47,6 @@ $(function() {
 		offset: '75%'
 	});
 
-	/* paper airplane button animation */
-	$('.email-button').hover(function() {
-		$('.email-icon').css('transform', 'translate(45%, -45%) scale(0.65)');
-	}, function() {
-		$('.email-icon').css('transform', 'translate(0, 0) scale(1)');
-	});
-
 	// for preloader
 	// setTimeout(function(){
 	// 	$('body').addClass('loaded');
@@ -98,6 +91,13 @@ $(function() {
         $("#to-top-copy").animate({opacity: "0"}, "slow");
 	});
 
+	// paper airplane button animation
+	$('#submit-button').hover(function() {
+		$('.email-icon').css('transform', 'translate(45%, -45%) scale(0.65)');
+	}, function() {
+		$('.email-icon').css('transform', 'translate(0, 0) scale(1)');
+	});
+
 	// Dark mode
 	var dark_mode = false;
 
@@ -110,6 +110,7 @@ $(function() {
 		$("#services").toggleClass("dark-services");
 		$("#experience").toggleClass("dark-experience");
 		$("#experience a").toggleClass("dark-experience-a");
+		$("#experience .skill-icon").toggleClass("dark-experience-skill-icon");
 		$("#experience .places-worked").toggleClass("dark-experience-places-worked");
 		$("#portfolio").toggleClass("dark-portfolio");				
 		$(".modal-header").toggleClass("dark-modal-header");				
