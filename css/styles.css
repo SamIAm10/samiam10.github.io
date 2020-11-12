@@ -2253,6 +2253,7 @@ body {
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-bottom: 2px;
 }
   
 .switch input { 
@@ -2308,17 +2309,24 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+#dark-switch-toggle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* toggle switch icons */
 #sun-icon {
     display: inline-block;
-    -webkit-transform: translate(-80%, 40%) scale(1.8);
-    -ms-transform: translate(-80%, 40%) scale(1.8);
-    transform: translate(-80%, 40%) scale(1.8);
+    vertical-align: middle;
+    -webkit-transform: translateX(-100%) scale(2);
+    -ms-transform: translateX(-100%) scale(2);
+    transform: translateX(-100%) scale(2);
 }
 
 #moon-icon {
     display: inline-block;
-    -webkit-transform: translate(80%, 40%) scale(1.8);
-    -ms-transform: translate(80%, 40%) scale(1.8);
-    transform: translate(80%, 40%) scale(1.8);
+    vertical-align: middle;
+    -webkit-transform: translateX(100%) scale(2);
+    -ms-transform: translateX(100%) scale(2);
+    transform: translateX(100%) scale(2);
 }
