@@ -837,7 +837,7 @@ a.fa.fa-angle-down:focus {
 
 #experience {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     background: #fff;
 }
 
@@ -1137,6 +1137,8 @@ a.fa.fa-angle-down:focus {
 
 .skills-section {
     /*background: mistyrose;*/
+    padding-top: 10px;
+    margin-bottom: 30px;
 }
 
 .skills-section h3 {
@@ -1218,7 +1220,10 @@ a.fa.fa-angle-down:focus {
 .places-worked {
     /* background: mistyrose; */
     padding-bottom: 2%;
-    border-radius: 20px;
+}
+
+.employment {
+    padding-top: 10px;
 }
 
 .employment h3 {
@@ -2186,8 +2191,18 @@ body {
     filter: drop-shadow(3px 3px 3px rgb(90, 90, 90)); */
 }
 
-.dark-experience-places-worked {
+.dark-experience-skills-section {
     background-color: gray !important;
+    border-radius: 20px !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
+}
+
+.dark-experience-employment {
+    background-color: gray !important;
+    border-radius: 20px !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
 }
 
 .dark-portfolio {

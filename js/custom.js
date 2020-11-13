@@ -111,7 +111,8 @@ $(function() {
 		$("#experience").toggleClass("dark-experience", dark_mode);
 		$("#experience a").toggleClass("dark-experience-a", dark_mode);
 		$("#experience .skill-icon").toggleClass("dark-experience-skill-icon", dark_mode);
-		$("#experience .places-worked").toggleClass("dark-experience-places-worked", dark_mode);
+		$("#experience .skills-section").toggleClass("dark-experience-skills-section", dark_mode);
+		$("#experience .employment").toggleClass("dark-experience-employment", dark_mode);
 		$("#portfolio").toggleClass("dark-portfolio", dark_mode);				
 		$(".modal-header").toggleClass("dark-modal-header", dark_mode);				
 		$(".modal-header h6").toggleClass("dark-modal-header-h6", dark_mode);				
