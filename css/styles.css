@@ -618,6 +618,10 @@ a.fa.fa-angle-down:focus {
     padding-bottom: 100px;
 }
 
+#about h2 {
+    margin-top: 50px;
+}
+
 #about img#prof-pic {
     width: 170px;
     height: auto;
@@ -2266,9 +2270,10 @@ body {
 .switch {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     width: 60px;
     height: 34px;
-    margin-bottom: 2px;
+    margin: 0px 8px 0px 8px;
 }
   
 .switch input { 
@@ -2324,24 +2329,10 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-#dark-switch-toggle {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 /* toggle switch icons */
-#sun-icon {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateX(-100%) scale(2);
-    -ms-transform: translateX(-100%) scale(2);
-    transform: translateX(-100%) scale(2);
-}
-
+#sun-icon,
 #moon-icon {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: translateX(100%) scale(2);
-    -ms-transform: translateX(100%) scale(2);
-    transform: translateX(100%) scale(2);
+    font-size: 27px;
 }
