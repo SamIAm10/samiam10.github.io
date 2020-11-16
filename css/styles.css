@@ -1962,7 +1962,7 @@ ul.social-buttons li a:active {
 
 @media screen and (min-width: 768px) {
     .modal-dialog {
-        width: 700px;
+        width: 699px;
     }
 }
 
@@ -2197,7 +2197,7 @@ body {
 
 .dark-experience-skills-section,
 .dark-experience-employment {
-    background-color: #79593f !important;
+    background-color: #584f46 !important;
     border-radius: 20px !important;
     -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
     box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
