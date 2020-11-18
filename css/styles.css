@@ -2271,8 +2271,8 @@ input:checked + .slider:before {
 .dark-experience-employment {
     background-color: #584f46 !important;
     border-radius: 20px !important;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px !important;
 }
 
 /* .dark-experience-employment {
