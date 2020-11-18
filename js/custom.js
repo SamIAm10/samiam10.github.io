@@ -125,6 +125,7 @@ $(function() {
 		$(".modal-footer .btn").toggleClass("dark-modal-footer-btn", dark_mode);
 		$("#contact").toggleClass("dark-contact", dark_mode);
 		$("#contact .email-button").toggleClass("dark-contact-email-button", dark_mode);
+		$("#contact a").toggleClass("dark-contact-a", dark_mode);
 	}
 
 	toggleDarkMode();

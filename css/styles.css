@@ -2338,3 +2338,7 @@ input:checked + .slider:before {
     color: white !important;
     border: 2px solid white !important;
 }
+
+.dark-contact-a {
+    color: cyan !important;
+}

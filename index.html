@@ -51,13 +51,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
 
-    <!-- Calendly badge widget begin -->
+    <!-- Calendly link widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        Calendly.initBadgeWidget({ url: 'https://calendly.com/wissam-razouki', text: 'Schedule time with me', color: '#00a2ff', textColor: '#ffffff', branding: true });
-    </script>
-    <!-- Calendly badge widget end -->  
+    <!-- Calendly link widget end -->
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100">
@@ -696,7 +693,9 @@
                     <div class="col-md-10 col-md-offset-1 text-center">
                         <div class="email-icon"><i class="fa fa-paper-plane-o wp6"></i></div>
                         <h2>Let's Work Together!</h2>
-                        <p>I'm currently open to new opportunities. If you want to talk with me about a project or position, feel free to shoot me a message below!</p>
+                        <p>
+                            I'm currently open to new opportunities. If you want to talk with me about a project or position, feel free to shoot me a message below!
+                        </p>
                         <!-- <p style="margin-top:40px;">
                             <a class="email-button" href="mailto:wissam.razouki@uconn.edu">Email</a> &nbsp; or &nbsp; <a class="email-button" href="sms:2032759216">SMS</a>
                         </p> -->
@@ -711,6 +710,9 @@
                                 <span class="fa fa-envelope-o"></span>wissam.razouki@uconn.edu
                             </div> -->
                         </form>
+                        <p>
+                            You can also <b><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/wissam-razouki'});return false;">schedule a meeting with me</a></b> (via Calendly).
+                        </p>
                     </div>
                 </div>
             </div>
