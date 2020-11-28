@@ -119,7 +119,7 @@ $(function() {
 		$(".modal-header .close").toggleClass("dark-modal-header-close", dark_mode);				
 		$(".modal-body").toggleClass("dark-modal-body", dark_mode);			
 		$(".modal-body a").toggleClass("dark-modal-body-a", dark_mode);			
-		$(".modal-body .tech_used").toggleClass("dark-modal-body-tech_used", dark_mode);			
+		$(".modal-body .tech-used").toggleClass("dark-modal-body-tech-used", dark_mode);			
 		$(".modal-body #visit-btn").toggleClass("dark-modal-body-visit-btn", dark_mode);
 		$(".modal-footer").toggleClass("dark-modal-footer", dark_mode);				
 		$(".modal-footer .btn").toggleClass("dark-modal-footer-btn", dark_mode);

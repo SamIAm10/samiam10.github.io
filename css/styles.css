@@ -1929,7 +1929,7 @@ ul.social-buttons li a:active {
     border-bottom: 0 none;
 }
 
-.tech_used {
+.tech-used {
     display: inline-block;
     margin: 3px 3px 3px 0;
     font-family: Inconsolata, monospace;
@@ -1942,7 +1942,7 @@ ul.social-buttons li a:active {
     background: 0 0;
 }
 
-.tech_used:first-of-type {
+.tech-used:first-of-type {
     margin-left: 0;
 }
 
@@ -2309,7 +2309,7 @@ input:checked + .slider:before {
     color: cyan !important;
 }
 
-.dark-modal-body-tech_used {
+.dark-modal-body-tech-used {
     color: orange !important;
     border: 1px solid orange !important;
 }
