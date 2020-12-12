@@ -1702,7 +1702,17 @@ a.resume-btn:active {
     background-color: #F0F0F0;
 }
 
-.email-icon {
+.shk {
+    /* transform: translate3d(0, 0, 0); */
+    backface-visibility: hidden;
+    animation-name: shake;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease;
+    animation-delay: 0s;
+}
+
+#email-icon {
     width: 100px;
     height: 100px;
     line-height: 100px;
@@ -2184,10 +2194,10 @@ body {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 24px;
+    width: 24px;
+    left: 5px;
+    bottom: 5px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -2227,7 +2237,7 @@ input:checked + .slider:before {
 /* ============== DARK MODE ============== */
 
 .dark-about {
-    background: rgb(29, 28, 28) !important;
+    background-color: rgb(29, 28, 28) !important;
     color: white !important;
 }
 
@@ -2279,12 +2289,12 @@ input:checked + .slider:before {
 } */
 
 .dark-portfolio {
-    background: rgb(29, 28, 28) !important;
+    background-color: rgb(29, 28, 28) !important;
     color: white !important;
 }
 
 .dark-modal-header {
-    background: rgb(47, 47, 47) !important;
+    background-color: rgb(47, 47, 47) !important;
     color: white !important;
 }
 
@@ -2297,7 +2307,7 @@ input:checked + .slider:before {
 }
 
 .dark-modal-body {
-    background: rgb(62, 62, 62) !important;
+    background-color: rgb(62, 62, 62) !important;
     color: white !important;
 }
 
@@ -2316,7 +2326,7 @@ input:checked + .slider:before {
 }
 
 .dark-modal-footer {
-    background: rgb(47, 47, 47) !important;
+    background-color: rgb(47, 47, 47) !important;
     color: white !important;
 }
 

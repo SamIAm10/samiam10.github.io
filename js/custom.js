@@ -91,15 +91,23 @@ $(function() {
         $("#to-top-copy").animate({opacity: "0"}, "slow");
 	});
 
-	// paper airplane button animation
+	// Paper airplane animation
+	function shake() {
+		$("#email-icon").toggleClass("shk");
+	}
+
+	var shake_interval = setInterval(shake, 5000);
+
 	$('#submit-button').hover(function() {
-		$('.email-icon').css('transform', 'translate(45%, -45%) scale(0.65)');
+		$('#email-icon').css('transform', 'translate(45%, -45%) scale(0.65)');
+		clearInterval(shake_interval);
 	}, function() {
-		$('.email-icon').css('transform', 'translate(0, 0) scale(1)');
+		$('#email-icon').css('transform', 'translate(0, 0) scale(1)');
+		shake_interval = setInterval(shake, 5000);
 	});
 
 	// Dark mode
-	var dark_mode;
+	var dark_mode = false;
 
 	function toggleDarkMode() {
 		dark_mode = $("#dark-toggle").prop("checked");
