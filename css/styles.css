@@ -848,6 +848,10 @@ a.fa.fa-angle-down:focus {
     margin: 0px auto;
 }
 
+#experience a {
+    font-weight: 500;
+}
+
 .skills {
     margin-top: 50px;
 }
@@ -2051,12 +2055,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fed136;
+    background: #c49d12;
 }
 
 ::selection {
     text-shadow: none;
-    background: #fed136;
+    background: #c49d12;
 }
 
 img::selection {
@@ -2068,7 +2072,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #fed136;
+    webkit-tap-highlight-color: #c49d12;
 }
 
 
@@ -2127,7 +2131,7 @@ body {
 
 #form button {
 	float: right;
-	padding: 8px 12px;
+	padding: 9px 14px;
 	margin: 30px 0 0;
 	font-family: 'Montserrat', sans-serif;
 	border: 2px solid #78788c;
