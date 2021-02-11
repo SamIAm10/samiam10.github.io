@@ -1139,6 +1139,14 @@ a.fa.fa-angle-down:focus {
     }
 }
 
+.skills-section,
+.employment {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
+}
+
 .skills-section {
     /*background: mistyrose;*/
     padding-top: 10px;
