@@ -608,9 +608,14 @@ a.fa.fa-angle-down:focus {
 
 
 /* ======= ABOUT ======= */
+#dark-side-image {
+    width: 40px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
 
 #about {
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 100px;
 }
 
@@ -621,6 +626,7 @@ a.fa.fa-angle-down:focus {
 #about img#prof-pic {
     width: 170px;
     height: auto;
+    border-radius: 50%;
 }
 
 #about p {
@@ -634,7 +640,7 @@ a.fa.fa-angle-down:focus {
 }
 
 #about img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 #about #tl-dr {
@@ -723,7 +729,7 @@ a.fa.fa-angle-down:focus {
 
 @media screen and (max-width: 500px) {
     #about {
-        padding: 60px 10px;
+        padding: 0px 10px 60px 10px;
     }
     #about #tl-dr h5 {
         /*font-size: 10px;*/
