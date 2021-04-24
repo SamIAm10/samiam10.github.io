@@ -634,10 +634,6 @@ a.fa.fa-angle-down:focus {
     font-weight: 500;
 }
 
-#about img {
-    /* border-radius: 50%; */
-}
-
 #about #tl-dr {
     background: #f0f0f0;
     color: #555;
