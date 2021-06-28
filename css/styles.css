@@ -626,7 +626,7 @@ a.fa.fa-angle-down:focus {
 
 #about p {
     font-size: 16px;
-    max-width: 650px;
+    max-width: 700px;
     margin: 30px auto;
 }
 
@@ -642,7 +642,7 @@ a.fa.fa-angle-down:focus {
     padding: 20px;
     height: 200px;
     width: 50%;
-    max-width: 650px;
+    max-width: 700px;
 }
 
 #about #tl-dr h3 {
