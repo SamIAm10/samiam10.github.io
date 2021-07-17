@@ -238,9 +238,9 @@ p {
 
 a {
     color: #00009C;
-    -webkit-transition: all .2s ease-in-out;
+    /* -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; */
 }
 
 a:hover,
@@ -643,6 +643,7 @@ a.fa.fa-angle-down:focus {
     height: 200px;
     width: 50%;
     max-width: 700px;
+    border-radius: 10px;
 }
 
 #about #tl-dr h3 {
@@ -1386,7 +1387,8 @@ a.resume-btn {
     letter-spacing: 1px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
+    border-radius: 40px;
 }
 
 a.resume-btn:hover,
@@ -1821,6 +1823,8 @@ ul.social-buttons li a {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
+    border-radius: 4px;
+    margin: 1px;
 }
 
 @media screen and (max-width: 480px) {
@@ -1848,9 +1852,9 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:active {
     color: #FFF;
-    -webkit-box-shadow: 1px 1px 3px #333;
+    /* -webkit-box-shadow: 1px 1px 3px #333;
     -moz-box-shadow: 1px 1px 3px #333;
-    box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333; */
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -1972,6 +1976,10 @@ ul.social-buttons li a:active {
     border-bottom: 0 none;
 }
 
+.img-centered {
+    border-radius: 20px !important;
+}
+
 .tech-used {
     display: inline-block;
     margin: 3px 3px 3px 0;
@@ -1996,6 +2004,9 @@ ul.social-buttons li a:active {
 
 .modal-footer .btn-default {
     transition: all .2s ease-in-out;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    border-radius: 40px !important;
 }
 
 .close {
@@ -2053,7 +2064,7 @@ ul.social-buttons li a:active {
 }
 
 .modal-body #visit-btn {
-    padding: 10px;
+    padding: 10px 15px;
     color: #00009C;
     border: 2px solid #00009C;
     text-decoration: none;
@@ -2063,6 +2074,7 @@ ul.social-buttons li a:active {
     margin: 40px 10px;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    border-radius: 40px;
 }
 
 .modal-body #visit-btn:hover {
@@ -2164,14 +2176,15 @@ body {
 
 #form button {
 	float: right;
-	padding: 9px 14px;
+	padding: 9px 16px;
 	margin: 30px 0 0;
 	font-family: 'Montserrat', sans-serif;
 	border: 2px solid #78788c;
 	background: 0;
 	color: #5a5a6e;
 	cursor: pointer;
-	transition: all .3s
+	transition: all .3s;
+    border-radius: 40px;
 }
 
 #form button:hover {
@@ -2314,8 +2327,6 @@ input:checked + .slider:before {
 .dark-experience-employment {
     background-color: #584f46 !important;
     border-radius: 20px !important;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px !important;
-    box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px !important;
 }
 
 /* .dark-experience-employment {
