@@ -464,7 +464,7 @@ a.active {
     }
 }
 
-.navbar-brand.page-scroll {
+.navbar-brand .page-scroll {
     letter-spacing: 1px;
     font-size: 16px;
 }
@@ -511,7 +511,7 @@ a.active {
 /* ======= INTRODUCTION ======= */
 
 #intro {
-    background: url(../img/mountain-dusk.jpg);
+    background: url(../img/moon-lake.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1398,7 +1398,7 @@ a.resume-btn:active {
     /*font-weight: 400;*/
     border: 2px solid #ccc;
     background-color: rgba(254, 254, 254, 0.2);
-    padding: 10px 30px;
+    padding: 10px 27px;
 }
 
 
@@ -1926,16 +1926,23 @@ ul.social-buttons li a:active {
     transition: all 0.5s;
 }
 
-#to-top:hover {
+/* #to-top:hover {
     background-color: transparent;
     color: #fff;
     text-decoration: none;
-}
+} */
 
 #to-top img {
     width: 50px;
     padding: 5px;
-    margin: 10px auto 0px;
+    margin: 18px auto 0px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#to-top img:hover {
+    transform: translate(0%, -13%);
+    opacity: 0.8;
 }
 
 #to-top-copy {
@@ -2004,9 +2011,6 @@ ul.social-buttons li a:active {
 
 .modal-footer .btn-default {
     transition: all .2s ease-in-out;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    border-radius: 40px !important;
 }
 
 .close {
@@ -2096,6 +2100,9 @@ ul.social-buttons li a:active {
 .modal-footer .btn {
     border-radius: 0px;
     font-family: 'Lato', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 40px;
 }
 
 ::-moz-selection {
@@ -2281,7 +2288,7 @@ input:checked + .slider:before {
 #moon-icon {
     display: inline-block;
     vertical-align: middle;
-    font-size: 27px;
+    font-size: 29px;
 }
 
 /* ============== DARK MODE ============== */
@@ -2291,7 +2298,7 @@ input:checked + .slider:before {
     color: white !important;
 }
 
-.dark-about-a {
+.dark-about a {
     color: cyan !important;
 }
 
@@ -2300,7 +2307,7 @@ input:checked + .slider:before {
     color: rgb(199, 199, 199) !important;
 }
 
-.dark-tl-dr-h3 {
+.dark-tl-dr h3 {
     color: white !important;
 }
 
@@ -2309,27 +2316,30 @@ input:checked + .slider:before {
     color: white !important;
 }
 
+.dark-services .icon {
+    background-color: #5252ff !important;
+}
+
 .dark-experience {
     background-color: rgb(29, 28, 28) !important;
     color: white !important;
 }
 
-.dark-experience-a {
+.dark-experience a {
     color: cyan !important;
 }
 
-.dark-experience-skill-icon {
+.dark-experience .skill-icon {
     /* -webkit-filter: drop-shadow(3px 3px 3px rgb(152, 152, 152));
     filter: drop-shadow(3px 3px 3px rgb(90, 90, 90)); */
 }
 
-.dark-experience-skills-section,
-.dark-experience-employment {
+.dark-experience .skills-section,
+.dark-experience .employment {
     background-color: #584f46 !important;
-    border-radius: 20px !important;
 }
 
-/* .dark-experience-employment {
+/* .dark-experience .employment {
     background-color: gray !important;
     border-radius: 20px !important;
     -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 10px 10px 10px;
@@ -2346,12 +2356,12 @@ input:checked + .slider:before {
     color: white !important;
 }
 
-.dark-modal-header-h6 {
+.dark-modal-header h6 {
     color: rgb(193, 193, 193) !important;
 }
 
-.dark-modal-header-close {
-    color: rgb(213, 213, 213) !important;
+.dark-modal-header .close {
+    color: rgb(255, 255, 255) !important;
 }
 
 .dark-modal-body {
@@ -2359,18 +2369,22 @@ input:checked + .slider:before {
     color: white !important;
 }
 
-.dark-modal-body-a {
+.dark-modal-body a {
     color: cyan !important;
 }
 
-.dark-modal-body-tech-used {
+.dark-modal-body .tech-used {
     color: rgb(0, 255, 174) !important;
     border: 1px solid rgb(0, 255, 174) !important;
 }
 
-.dark-modal-body-visit-btn {
+.dark-modal-body #visit-btn {
     color: cyan !important;
     border: 2px solid rgb(0, 181, 181) !important;
+}
+
+.dark-modal-body #visit-btn:hover {
+    background-color: rgb(0, 181, 181);
 }
 
 .dark-modal-footer {
@@ -2378,9 +2392,14 @@ input:checked + .slider:before {
     color: white !important;
 }
 
-.dark-modal-footer-btn {
+.dark-modal-footer .btn {
     color: white !important;
-    background-color: rgb(86, 86, 86) !important;
+    background-color: rgb(37, 37, 37) !important;
+    border-color: rgb(146, 146, 146) !important;
+}
+
+.dark-modal-footer .btn:hover {
+    background-color: #585858 !important;
 }
 
 .dark-contact {
@@ -2388,11 +2407,15 @@ input:checked + .slider:before {
     color: white !important;
 }
 
-.dark-contact-email-button {
+.dark-contact .email-button {
     color: white !important;
     border: 2px solid white !important;
 }
 
-.dark-contact-a {
+.dark-contact .email-button:hover {
+    background-color: rgb(0, 181, 181);
+}
+
+.dark-contact a {
     color: cyan !important;
 }

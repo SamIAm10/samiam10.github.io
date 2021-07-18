@@ -84,12 +84,12 @@ $(function() {
         $('.navbar-toggle:visible').click();
     });
 
-    $("#to-top").mouseover(function() {
-        $("#to-top-copy").animate({opacity: "1"}, "slow");
-    });
-    $("#to-top").mouseout(function() {
-        $("#to-top-copy").animate({opacity: "0"}, "slow");
-	});
+    // $("#to-top").mouseover(function() {
+    //     $("#to-top-copy").animate({opacity: "1"}, "slow");
+    // });
+    // $("#to-top").mouseout(function() {
+    //     $("#to-top-copy").animate({opacity: "0"}, "slow");
+	// });
 
 	// Paper airplane animation
 	function shake() {
@@ -112,53 +112,18 @@ $(function() {
 	function toggleDarkMode() {
 		dark_mode = $("#dark-toggle").prop("checked");
 		$("#about").toggleClass("dark-about", dark_mode);
-		$("#about a").toggleClass("dark-about-a", dark_mode);
 		$("#tl-dr").toggleClass("dark-tl-dr", dark_mode);
-		$("#tl-dr h3").toggleClass("dark-tl-dr-h3", dark_mode);
 		$("#services").toggleClass("dark-services", dark_mode);
 		$("#experience").toggleClass("dark-experience", dark_mode);
-		$("#experience a").toggleClass("dark-experience-a", dark_mode);
-		$("#experience .skill-icon").toggleClass("dark-experience-skill-icon", dark_mode);
-		$("#experience .skills-section").toggleClass("dark-experience-skills-section", dark_mode);
-		$("#experience .employment").toggleClass("dark-experience-employment", dark_mode);
 		$("#portfolio").toggleClass("dark-portfolio", dark_mode);				
 		$(".modal-header").toggleClass("dark-modal-header", dark_mode);				
-		$(".modal-header h6").toggleClass("dark-modal-header-h6", dark_mode);				
-		$(".modal-header .close").toggleClass("dark-modal-header-close", dark_mode);				
 		$(".modal-body").toggleClass("dark-modal-body", dark_mode);			
-		$(".modal-body a").toggleClass("dark-modal-body-a", dark_mode);			
-		$(".modal-body .tech-used").toggleClass("dark-modal-body-tech-used", dark_mode);			
-		$(".modal-body #visit-btn").toggleClass("dark-modal-body-visit-btn", dark_mode);
 		$(".modal-footer").toggleClass("dark-modal-footer", dark_mode);				
-		$(".modal-footer .btn").toggleClass("dark-modal-footer-btn", dark_mode);
 		$("#contact").toggleClass("dark-contact", dark_mode);
-		$("#contact .email-button").toggleClass("dark-contact-email-button", dark_mode);
-		$("#contact a").toggleClass("dark-contact-a", dark_mode);
 	}
 
 	toggleDarkMode();
 	
 	$("#dark-toggle").click(toggleDarkMode);
-
-	$(".modal-body #visit-btn").hover(function() {
-		if (dark_mode) {
-			$(this).css("background-color", "rgb(0, 181, 181)");
-		}
-	}, function() {
-		if (dark_mode) {
-			$(this).css("background-color", "");
-		}
-	});
-
-	$("#contact .email-button").hover(function() {
-		if (dark_mode) {
-			$(this).css("background-color", "rgb(0, 181, 181)");
-		}
-	}, function() {
-		if (dark_mode) {
-			$(this).css("background-color", "");
-		}
-	});
 	// End dark mode
-
 });
