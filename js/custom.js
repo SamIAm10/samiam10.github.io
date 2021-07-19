@@ -111,6 +111,7 @@ $(function() {
 
 	function toggleDarkMode() {
 		dark_mode = $("#dark-toggle").prop("checked");
+		$("#intro").toggleClass("dark-intro", dark_mode);
 		$("#about").toggleClass("dark-about", dark_mode);
 		$("#tl-dr").toggleClass("dark-tl-dr", dark_mode);
 		$("#services").toggleClass("dark-services", dark_mode);

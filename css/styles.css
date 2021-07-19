@@ -511,13 +511,14 @@ a.active {
 /* ======= INTRODUCTION ======= */
 
 #intro {
-    background: url(../img/moon-lake.jpg);
+    background: url(../img/sun-field.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #000;
     color: #000;
+    transition: all 0.3s ease-in-out;
 }
 
 #intro .overlay {
@@ -2292,6 +2293,16 @@ input:checked + .slider:before {
 }
 
 /* ============== DARK MODE ============== */
+
+.dark-intro {
+    background: url(../img/moon-lake.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-color: #000 !important; 
+    color: #000 !important;
+}
 
 .dark-about {
     background-color: rgb(29, 28, 28) !important;
