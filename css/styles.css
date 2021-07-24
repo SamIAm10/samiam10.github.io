@@ -2300,8 +2300,6 @@ input:checked + .slider:before {
     background-position: center !important;
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
-    background-color: #000 !important; 
-    color: #000 !important;
 }
 
 .dark-about {
