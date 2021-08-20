@@ -613,6 +613,7 @@ a.fa.fa-angle-down:focus {
 #about {
     padding-top: 50px;
     padding-bottom: 100px;
+    transition: all 0.3s ease-in-out;
 }
 
 #about h2 {
@@ -633,6 +634,7 @@ a.fa.fa-angle-down:focus {
 
 #about a {
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
 }
 
 #about #tl-dr {
@@ -645,6 +647,7 @@ a.fa.fa-angle-down:focus {
     width: 50%;
     max-width: 700px;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 #about #tl-dr h3 {
@@ -652,6 +655,7 @@ a.fa.fa-angle-down:focus {
     font-size: 22px;
     margin-bottom: 40px;
     color: #111;
+    transition: all 0.3s ease-in-out;
 }
 
 #about #tl-dr h4 {
@@ -774,6 +778,7 @@ a.fa.fa-angle-down:focus {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #F0F0F0;
+    transition: all 0.3s ease-in-out;
 }
 
 #services h3 {
